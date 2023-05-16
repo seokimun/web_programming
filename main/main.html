@@ -2,19 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>주모-주식의 모든것</title> <!-- 타이틀 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- 폰트설정 --> <!-- 현재페이지에 외부 도메인의 리소스를 참고하는 것을 브라우저에게 알린다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- 폰트설정 --> <!-- 현재페이지에 외부 도메인의 리소스를 참고하는 것을 브라우저에게 알린다 -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
-    />
+    /> <!-- 폰트설정 -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link href="./main.css" rel="stylesheet" />
+      rel="stylesheet" 
+    /> <!-- 폰트설정 -->
+    <link href="./main.css" rel="stylesheet" /> <!-- main폴더에 있는 main.css파일을 사용해 스타일을 적용 -->
     <h1>주모 - 주식의 모든것</h1>
     <br><h2>최고의 주식분석가들이 선보이는 최상의 시장분석</h2>
     <h3>더이상 힘들어하지 마시고 저희 분석가들이 분석하여 제공하는 최상의 서비스를 받아보세요</h3>
@@ -25,7 +24,7 @@
       <li> 무료로 이용할수있는 최고의 주식정보</li>
       <li> 90% 이상의 정확도를 가진 시장 분석프로그램 보유</li>
     </ul>
-    
+    <!-- 본문 -->
     <style>
       h1 {
         color:white;
@@ -49,11 +48,12 @@
       
       }
     </style>
+    <!-- 본문 스타일 -->
   </head>
   <body>
-    <button class="menu_button" onclick="toggleMenu()"></button>
+    <button class="menu_button" onclick="toggleMenu()"></button> <!-- 버튼의 유형을 토글식으로 구현 --> <!-- 버튼 아이디값을 menu_button으로 설정 -->
     <div class="background"></div>
-    <div class="menu">
+    <div class="menu"> <!-- menu로 아이디값을 설정 -->
       <nav>
         <a style="animation-delay: 0.2s">About</a> <!-- 0.2초의 딜레이를 가지며 등장 -->
         <a style="animation-delay: 0.3s">Portfolio</a> <!-- 0.3초의 딜레이를 가지며 등장 -->
@@ -62,7 +62,7 @@
       </nav>
     </div>
     <script type="text/javascript">
-      const toggleMenu = () => document.body.classList.toggle("open");
-    </script>
+      const toggleMenu = () => document.body.classList.toggle("open"); 
+    </script><!-- 버튼의 on,off 개념 -->
   </body>
 </html>
