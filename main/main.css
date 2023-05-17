@@ -1,50 +1,48 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* 테두리의 기준으로 박스크기 지정 */
 }
 
 html,
 body {
-  height: 100%;
+  height: 100%; /* 이미지의 크기를 화면에 꽉채운다 */
 }
 
 
 
 body {
-  font-family: "Euclid Circular A", Poppins;
+  font-family: "Euclid Circular A", Poppins; /* 바디 폰트설정 */
   color: #f9f9f9;
   background-image: url("bg.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
+  background-size: cover; /* 지정한 사진을 다덮도록 배경이미지를 확대 */
+  background-position: 0% 0%; /* 배경이미지의 위치 = 기본값 */
+  background-attachment: fixed; /* 스크롤 금지 */
 }
 
-button {
+button { /* 버튼의 스타일설정 */
   border: 0;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
+  padding: 0; 
+  /* 버튼의 위치설정 (상자역역) */
+  background: transparent; /* 버튼의 배경을 투명하게 설정 */
+  cursor: pointer; /* 버튼의 위치에 커서가 이동했을때 손가락모양으로 커서모양변경 */
 }
 
 .menu_button,
 .menu {
   position: fixed;
-}
+} /* 메뉴버튼의 위치고정 */
 
 .menu_button {
-  z-index: 4;
+  z-index: 4; /* 버튼이 다른 컨텐츠 뒤에 가려져 클릭이 안됨 -> z-index로 해결 */
   top: 0;
   left: 0;
   display: grid;
   place-items: center;
-  width: 88px;
-  height: 88px;
-  background-image: url("menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-body.open .burger {
-  background-image: url("close.svg");
+  width: 90px;
+  height: 90px;
+  /* 버튼의 위치 설정 */
+  background-image: url("menu.svg"); /* 메뉴버튼의 이미지 설정  */
+  background-repeat: no-repeat; /* 메뉴버튼의 이미지 반복여부 설정*/
+  background-position: center; /* 메뉴버튼 이미지의 위치설정 */
 }
 
 .background {
