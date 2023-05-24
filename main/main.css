@@ -12,7 +12,7 @@ body {
 body {
   font-family: "Euclid Circular A", Poppins; /* 바디 폰트설정 */
   color: #f9f9f9;
-  background-image: url("bg.webp");
+  /* background-image: url("bg.webp"); */
   background-size: cover; /* 지정한 사진을 다덮도록 배경이미지를 확대 */
   background-position: 0% 0%; /* 배경이미지의 위치 = 기본값 */
   background-attachment: fixed; /* 스크롤 금지 */
