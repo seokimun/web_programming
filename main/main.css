@@ -36,52 +36,37 @@ button { /* 버튼의 스타일설정 */
 }
 
 
-
+/* 메뉴바 설정 */
 .menu {
   z-index: 3;
-  top: 0;
-  left: 0;
+  top: 0; /* 상단위치 */
   display: flex;
   align-items: center;
-  height: 60%;
-  width: 100%;
-  opacity: 0;
+  height: 55%;
   visibility: hidden;
-  transition: 0.05s;
 }
 
+/* 메뉴 위치 설정 */
 .menu nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 100px;
+  align-items: flex-start; /* 아이템의 시작점으로 정렬 */
+  padding-left: 1px;
 }
 
 body.open .menu {
-  opacity: 1;
-  visibility: visible;
+  visibility: visible; /* 행의 요소를 보이게 한다 */
 }
 
-body .menu nav:hover > a {
-  opacity: 0.25;
-}
-
-body .menu nav > a:hover {
-  opacity: 1;
-  translate: 8px 0;
-}
 
 .menu a {
   position: relative;
   color: #f9f9f9;
-  font-size: 32px;
+  font-size: 35px;
   font-family: "Euclid Circular A";
   padding: 20px 0 20px 20px;
-  text-decoration: none;
-  opacity: 0;
   cursor: pointer;
-  transition: 0.4s;
 }
 
 .menu a::after {
@@ -116,5 +101,5 @@ body .menu nav > a:hover {
 
 body.open .menu a {
   opacity: 1;
-  animation: appear 0.35s backwards;
+  animation: appear 0.5s backwards;
 }
