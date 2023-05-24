@@ -42,7 +42,7 @@ button { /* 버튼의 스타일설정 */
   top: 0; /* 상단위치 */
   display: flex;
   align-items: center;
-  height: 55%;
+  height: 45%;
   visibility: hidden;
 }
 
@@ -65,7 +65,7 @@ body.open .menu {
   color: #f9f9f9;
   font-size: 35px;
   font-family: "Euclid Circular A";
-  padding: 20px 0 20px 20px;
+  padding: 10px 10px 10px 10px;
   cursor: pointer;
 }
 
