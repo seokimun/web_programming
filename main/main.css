@@ -103,3 +103,8 @@ body.open .menu a {
   opacity: 1;
   animation: appear 0.5s backwards;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
