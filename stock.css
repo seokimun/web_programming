@@ -2,20 +2,44 @@ header {
     display:flex;
     position:fixed;
     top: 0;
-    left:0;
+    left: 0;
     right:0;
 
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    box-sizing:border-box;
     height: 60px;
-    padding: 1rem;
-    color:white;
-    background-color:#17181e;
+    padding: 2rem;
+    padding-left: 20rem;
+    color:black;
+    background-color:white;
     font-weight: bold;
-    font-size: 20px;
-    justify-content: center;
+    font-size: 15px;
+    justify-content: space-between;
     align-items: center;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+.panel {
+    display:flex;
+    flex:1;
+    box-shadow: 0 4px 8px rgba(64, 64, 64, .16);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    color:black;
+    margin-top: 80px;
+    margin-left:300px;
+    margin-right:300px;
+    padding:8px;
+
+}
+
+div {
+    display:block;
+    padding: 4px;
+    cursor:pointer;
 }
