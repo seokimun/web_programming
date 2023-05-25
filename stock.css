@@ -9,7 +9,7 @@ header {
     box-sizing:border-box;
     height: 60px;
     padding: 2rem;
-    padding-left: 20rem;
+    padding-left: 25rem;
     color:black;
     background-color:white;
     font-weight: bold;
@@ -25,21 +25,34 @@ a {
 
 .panel {
     display:flex;
+    padding: 10px 10px;
     flex:1;
     box-shadow: 0 4px 8px rgba(64, 64, 64, .16);
     border-radius: 4px;
     text-align: center;
-    justify-content: center;
     color:black;
     margin-top: 80px;
-    margin-left:300px;
-    margin-right:300px;
-    padding:8px;
-
+    margin-left:390px;
+    margin-right:390px;
+    box-sizing:border-box;
+    font-size: 15px;
+    justify-content: center;
+    font-weight:bold;
 }
 
-div {
-    display:block;
-    padding: 4px;
-    cursor:pointer;
+/* 나중에 윈도우창이 작아져도 유지되는거 보수해야함 */
+ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    list-style: none;
+}
+
+li{
+    margin-left:130px;
+    margin-right:130px;
+}
+
+li:hover{
+    text-decoration: underline;
 }
