@@ -1,0 +1,54 @@
+body {
+    margin :0 ;
+}
+
+/* 헤더 설정 */
+header {
+    display:flex;
+    width:100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    box-sizing:border-box;
+    height: 50px;
+    padding: 10px;
+    padding-left: 32rem;
+    color:black;
+    background-color:white;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 전체적인 본문화면 설정 */
+article {
+    display:block;
+    font-family: "Noto Serif KR",serif;  /* 폰트설정 */
+    box-sizing: border-box;
+}
+
+/* 날짜표기 설정 */
+.date{
+    display:flex;
+    justify-content: flex-end;
+    font-size: 17px;
+    margin-right:450px;
+    margin-top: 10px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 800;
+    margin:24px 450px;
+
+}
+
+.body{
+    white-space: pre-line;
+    font-size: 18px;
+    margin-left : 450px;
+    margin-right : 450px;
+}
