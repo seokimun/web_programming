@@ -39,6 +39,7 @@ article {
     margin-top: 10px;
 }
 
+/* 본문제목 설정 */
 .title{
     font-size: 24px;
     font-weight: 800;
@@ -46,9 +47,11 @@ article {
 
 }
 
+/* 본문설정 */
 .body{
     white-space: pre-line;
     font-size: 18px;
     margin-left : 450px;
     margin-right : 450px;
+    margin-bottom: 100px;
 }
