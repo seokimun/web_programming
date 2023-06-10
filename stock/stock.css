@@ -31,7 +31,8 @@ a {
     text-align: center;
     color:black;
     margin-top: 10px;
-    margin-left:500px;
+    margin-left:auto;
+    margin-right:auto;
     box-sizing:border-box;
     font-size: 15px;
     justify-content: center;
@@ -63,7 +64,6 @@ li:hover{
     margin-top:10px;
     cursor:pointer;
     width:450px;
-
 }
 
 /* 본문에 마우스 선택시 기능 설정 */
@@ -76,7 +76,7 @@ li:hover{
 .post-card a {
     display:flex;
     align-items: center;
-    justify-content: center;
+
 }
 
 /* 날짜 설정 */
@@ -129,7 +129,8 @@ li:hover{
     display: grid;
     grid-template-columns: repeat(1,minmax(0,1fr));
     float:left;
-    margin-left: 500px;
+    margin-left: 480px;
+
 }
 
 

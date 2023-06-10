@@ -33,7 +33,7 @@ article {
 /* 날짜표기 설정 */
 .date{
     display:flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* 화면 오른쪽에 배치 */
     font-size: 17px;
     margin-right:450px;
     margin-top: 10px;
