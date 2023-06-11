@@ -1,0 +1,104 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+html{
+    font-size:10px;
+}
+
+/* 목록 및 수정버튼 스타일 설정 */
+a {
+    text-decoration: none; /* 밑줄삭제 */
+    color: inherit;
+}
+
+/* 전체적인 게시판 스타일 설정 */
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+/* 게시판 타이틀 설정 */
+.board_title{
+    margin-bottom:30px;
+}
+.board_title strong {
+    font-size: 3rem;
+}
+
+/* 보이는 게시판 스타일 설정 */
+.board_view {
+    width: 100%; /* 너비설정 */
+    border-top: 2px solid #000; /* 제목위의 선 설정 */
+}
+.board_view .title {
+    padding: 20px 15px; /* 위, 오른쪽 여백 설정 */
+    border-bottom: 1px dashed #ddd; /* 점선 스타일 */
+    font-size: 2rem; /* 글씨 크기 */
+}
+
+/* 번호, 글쓴이, 작성일, 조회 스타일 설정 */
+.board_view .info {
+    padding: 15px; /* 여백설정 */
+    border-bottom: 1px solid #999; /* 아래선 스타일 설정 */
+    font-size: 0; /* 글씨 크기 설정 */
+}
+/* 번호, 글쓴이, 작성일, 조회에 들어가는 숫자및 문자 스타일 설정 */
+.board_view .info dl {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+/* 번호, 글쓴이, 작성일, 조회 스타일 설정 */
+.board_view .info dl:first-child {
+    padding-left: 0; /* 왼쪽으로 정렬 */
+} 
+.board_view .info dl:first-child::before {
+    display: none;
+}
+.board_view .info dl dt,
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+.board_view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+/* 게시판 글 스타일 설정 */
+.board_view .cont {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 150%;
+    font-size: 1.4rem;
+}
+
+
+/* 목록 , 수정 버튼 스타일 */
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+/* 버튼의 글자 스타일 */
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+/* 목록버튼 스타일 설정 */
+.bt_wrap a.on {
+    background: #000;
+    color: #fff;
+}
