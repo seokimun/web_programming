@@ -8,8 +8,8 @@ header {
     box-shadow: 0 3px 6px rgba(0,0,0,.25);
     box-sizing:border-box;
     height: 50px;
-    padding: 10px;
-    padding-left: 32rem;
+    padding: 20px;
+    padding-left: 30rem;
     color:black;
     background-color:white;
     font-weight: bold;
@@ -30,7 +30,7 @@ a {
     border-radius: 4px;
     text-align: center;
     color:black;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left:auto;
     margin-right:auto;
     box-sizing:border-box;
@@ -61,7 +61,7 @@ li:hover{
 
 /* post-list */
 .post-card{
-    margin-top:10px;
+    margin-top:15px;
     cursor:pointer;
     width:450px;
 }
