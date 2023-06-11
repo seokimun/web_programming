@@ -2,8 +2,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>주모-주식의모든것</title>
+    <title>주모 - 주식의모든것</title>
+    <header>
+        <h1><a href="../main/main.html">주식의 모든것</a></h1>
+    </header>
     <style>
+        body {
+            margin:0;
+        }
+        /* 헤더 설정 */
+        header {
+            display:flex;
+            width:100%;
+            box-shadow: 0 3px 6px rgba(0,0,0,.25);
+            box-sizing:border-box;
+            height: 50px;
+            color:black;
+            background-color:white;
+            font-weight: bold;
+            font-size: 15px;
+            align-items: center;
+        }
+        /* 헤더안 h1스타일 설정 */
+        h1{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* 헤더안 글씨 설정 */
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 테이블 설정 */
         table {
             width: 100%;
             border-collapse: collapse;
