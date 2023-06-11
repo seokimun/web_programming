@@ -6,7 +6,7 @@ body {
 header {
     display:flex;
     width:100%;
-    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    box-shadow: 0 3px 6px rgba(0,0,0,.25); /* 그림자 설정 */
     box-sizing:border-box;
     height: 50px;
     padding: 10px;
@@ -17,7 +17,7 @@ header {
     font-size: 15px;
     align-items: center;
 }
-
+/* 박스안 글씨 설정 */
 a {
     text-decoration: none;
     color: black;
@@ -27,19 +27,19 @@ a {
 /* 테이블 설정 */
 ul,
 li {
-    list-style: none;
+    list-style: none; /* 스타일 설정x */
 }
 
 table {
-    width: 1000px;
+    width: 1000px; /* 테이블 너비 설정 */
     border-collapse: collapse; /* 표를 만들때 생기는 cell padding을 지움 */
-    margin-left: auto;
-    margin-right:auto;
+    margin-left: auto; /* 좌우 가운데 설정 */
+    margin-right:auto; /* 좌우 가운데 설정 */
     margin-top: 20px;
 }
 
 table th{
-    padding: 15px 21px;
+    padding: 15px 21px; /* top, right padding 설정 */
     background: #ececec;
     color: #666;
     font-size: 15px;
@@ -55,16 +55,19 @@ table td{
     text-align: center;
 }
 
+/* 마우스를 가져다댔을때의 설정 */
 table tr:hover{
     background: #eee;
     cursor: pointer;
 }
 
+/* 제목 테이블 설정 */
 .title {
     width: 45%;
     text-align: left;
 }
 
+/* 페이지 번호 설정 */
 .paging{
     padding:20px 0;
     width: 800px;
@@ -91,6 +94,7 @@ table tr:hover{
     color: #fff;
 }
 
+/* 페이지 번호에 마우스를 가져다댔을때의 스타일 설정 */
 .active {
     background: #333 !important; /* 스타일 강제 적용 */
     color: #fff;
