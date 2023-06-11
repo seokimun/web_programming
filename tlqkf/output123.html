@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>주모-주식의모든것</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+    <script>
+        // 클릭 이벤트 핸들러 함수
+        function cellClicked(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <h2>거래량 상위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>거래량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('삼부토건.html')">삼부토건</td><td>1944</td><td>140951165</td></tr><tr><td onclick="cellClicked('KODEX 200선물인버스2X.html')">KODEX 200선물인버스2X</td><td>2575</td><td>111692741</td></tr><tr><td onclick="cellClicked('삼성 인버스 2X WTI원유 선물 ETN.html')">삼성 인버스 2X WTI원유 선물 ETN</td><td>145</td><td>76968880</td></tr><tr><td onclick="cellClicked('웰바이오텍.html')">웰바이오텍</td><td>2150</td><td>47546225</td></tr><tr><td onclick="cellClicked('KODEX 코스닥150선물인버스.html')">KODEX 코스닥150선물인버스</td><td>4060</td><td>37720495</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>거래량 하위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>거래량 하위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>거래량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('QV S&P500 버퍼10% 12월 ETN(H).html')">QV S&P500 버퍼10% 12월 ETN(H)</td><td>10325</td><td>0</td></tr><tr><td onclick="cellClicked('QV iSelect-WG 그린에너지 ESG ETN.html')">QV iSelect-WG 그린에너지 ESG ETN</td><td>10260</td><td>0</td></tr><tr><td onclick="cellClicked('하나 iSelect-WG 탄소중립 ESG ETN.html')">하나 iSelect-WG 탄소중립 ESG ETN</td><td>10275</td><td>0</td></tr><tr><td onclick="cellClicked('메리츠 국채3년 ETN.html')">메리츠 국채3년 ETN</td><td>10390</td><td>0</td></tr><tr><td onclick="cellClicked('미래에셋 전기전자 Core5 ETN.html')">미래에셋 전기전자 Core5 ETN</td><td>31070</td><td>0</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>등락률 상위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>등락률 상위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>등락률</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('삼부토건.html')">삼부토건</td><td>1944</td><td>0.2995</td></tr><tr><td onclick="cellClicked('성안.html')">성안</td><td>2405</td><td>0.1425</td></tr><tr><td onclick="cellClicked('QV 블룸버그 -2X 천연가스 선물 ETN(H).html')">QV 블룸버그 -2X 천연가스 선물 ETN(H)</td><td>62485</td><td>0.106</td></tr><tr><td onclick="cellClicked('메리츠 블룸버그 -2X 천연가스 선물 ETN(H).html')">메리츠 블룸버그 -2X 천연가스 선물 ETN(H)</td><td>62865</td><td>0.0987</td></tr><tr><td onclick="cellClicked('KB 블룸버그 인버스2X 천연가스선물 ETN(H).html')">KB 블룸버그 인버스2X 천연가스선물 ETN(H)</td><td>62530</td><td>0.0905</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>등락률 하위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>등락률 하위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>등락률</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('삼성 레버리지 천연가스 선물 ETN C.html')">삼성 레버리지 천연가스 선물 ETN C</td><td>18490</td><td>-0.1024</td></tr><tr><td onclick="cellClicked('코오롱모빌리티그룹우.html')">코오롱모빌리티그룹우</td><td>10330</td><td>-0.1017</td></tr><tr><td onclick="cellClicked('삼성 레버리지 천연가스 선물 ETN C.html')">삼성 레버리지 천연가스 선물 ETN B</td><td>1495</td><td>-0.0994</td></tr><tr><td onclick="cellClicked('TRUE 블룸버그 레버리지 천연가스 선물 ETN.html')">TRUE 블룸버그 레버리지 천연가스 선물 ETN</td><td>1210</td><td>-0.097</td></tr><tr><td onclick="cellClicked('미래에셋 전기전자 Core5 ETN.html')">미래에셋 S&P 2X 천연가스 선물 ETN(H)</td><td>1315</td><td>-0.0962</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>액면가 상위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>외국인비율 상위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>외국인비율 상위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>외국인비율</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('ACE 200TR.html')">ACE 200TR</td><td>21520</td><td>100.0</td></tr><tr><td onclick="cellClicked('동양생명.html')">동양생명</td><td>3900</td><td>82.29</td></tr><tr><td onclick="cellClicked('S-Oil.html')">S-Oil</td><td>75600</td><td>79.11</td></tr><tr><td onclick="cellClicked('락앤락.html')">락앤락</td><td>5940</td><td>76.41</td></tr><tr><td onclick="cellClicked('KB금융.html')">KB금융</td><td>49400</td><td>72.6</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>외국인비율 하위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>외국인비율 하위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>외국인비율</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('KODEX 한국대만IT프리미어.html')">KODEX 한국대만IT프리미어</td><td>18160</td><td>0</td></tr><tr><td onclick="cellClicked('KODEX 코스피100.html')">KODEX 코스피100</td><td>26015</td><td>0</td></tr><tr><td onclick="cellClicked('ACE 코스닥150.html')">ACE 코스닥150</td><td>13120</td><td>0</td></tr><tr><td onclick="cellClicked('KB CSI 300 ETN.html')">KB CSI 300 ETN</td><td>9190</td><td>0</td></tr><tr><td onclick="cellClicked('KBSTAR 5대그룹주.html')">KBSTAR 5대그룹주</td><td>6605</td><td>0</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>전일거래량 상위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>전일거래량 상위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>전일거래량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('KODEX 200선물인버스2X.html')">KODEX 200선물인버스2X</td><td>2575</td><td>117731951</td></tr><tr><td onclick="cellClicked('삼부토건.html')">삼부토건</td><td>1944</td><td>70949521</td></tr><tr><td onclick="cellClicked('KODEX 코스닥150선물인버스.html')">KODEX 코스닥150선물인버스</td><td>4060</td><td>34160257</td></tr><tr><td onclick="cellClicked('웰바이오텍.html')">웰바이오텍</td><td>2150</td><td>28568358</td></tr><tr><td onclick="cellClicked('이수페타시스.html')">이수페타시스</td><td>11100</td><td>26914697</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>전일거래량 하위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>전일거래량 하위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>전일거래량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('메리츠 인버스 은 선물 ETN(H).html')">메리츠 인버스 은 선물 ETN(H)</td><td>9685</td><td>0</td></tr><tr><td onclick="cellClicked('KB CSI 500 ETN.html')">KB CSI 500 ETN</td><td>9310</td><td>0</td></tr><tr><td onclick="cellClicked('QV S&P500 버퍼10% 6월 ETN(H).html')">QV S&P500 버퍼10% 6월 ETN(H)</td><td>10425</td><td>0</td></tr><tr><td onclick="cellClicked('비케이탑스.html')">비케이탑스</td><td>904</td><td>0</td></tr><tr><td onclick="cellClicked('QV iSelect 글로벌 EMP ETN(H).html')">QV iSelect 글로벌 EMP ETN(H)</td><td>9670</td><td>0</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>전일비 상위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>전일비 상위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>전일비</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('LG화학.html')">LG화학</td><td>719000</td><td>19000</td></tr><tr><td onclick="cellClicked('LG에너지솔루션.html')">LG에너지솔루션</td><td>574000</td><td>14000</td></tr><tr><td onclick="cellClicked('삼성SDI.html')">삼성SDI</td><td>710000</td><td>10000</td></tr><tr><td onclick="cellClicked('포스코퓨처엠.html')">포스코퓨처엠</td><td>333500</td><td>10000</td></tr><tr><td onclick="cellClicked('POSCO홀딩스.html')">POSCO홀딩스</td><td>377000</td><td>8000</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>전일비 하위 5 종목</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>전일비 하위 5 종목</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>종목명</th><th>현재가</th><th>전일비</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td onclick="cellClicked('TRUE 인버스 0.5X S&P500 VIX ST 선물 ETN.html')">TRUE 인버스 0.5X S&P500 VIX S/T 선물 ETN</td><td>23975</td><td>0</td></tr><tr><td onclick="cellClicked('KB CSI 500 ETN.html')">KB CSI 500 ETN</td><td>9310</td><td>0</td></tr><tr><td onclick="cellClicked('비케이탑스.html')">비케이탑스</td><td>904</td><td>0</td></tr><tr><td onclick="cellClicked('PI첨단소재.html')">PI첨단소재</td><td>33100</td><td>0</td></tr><tr><td onclick="cellClicked('QV iSelect 글로벌 EMP ETN(H).html')">QV iSelect 글로벌 EMP ETN(H)</td><td>9670</td><td>0</td></tr>
+        </tbody>
+    </table>
+    <div style="width: 50%; float: left;"></div>
+</body>
+</html>
