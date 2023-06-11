@@ -27,8 +27,8 @@ button { /* 버튼의 스타일설정 */
   left: 0;
   display: grid;
   place-items: center;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   /* 버튼의 위치 설정 */
   background-image: url("menu.svg"); /* 메뉴버튼의 이미지 설정  */
   background-repeat: no-repeat; /* 메뉴버튼의 이미지 반복여부 설정*/
@@ -38,28 +38,27 @@ button { /* 버튼의 스타일설정 */
 
 /* 메뉴바 설정 */
 .menu {
-  z-index: 3;
+  z-index: 3; /* 버튼을 누를수 있도록 다른 컨텐츠위에 표시 */
   top: 0; /* 상단위치 */
   display: flex;
   align-items: center;
-  height: 45%;
-  visibility: hidden;
+  height: 40%; /* 전체높이 설정 */
+  visibility: hidden; /* 메뉴의 내용을 숨긴다 (버튼을 클릭하기 전까지) */
 }
 
 /* 메뉴 위치 설정 */
 .menu nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* 메뉴를 세로방향으로 설정 */
   justify-content: center;
   align-items: flex-start; /* 아이템의 시작점으로 정렬 */
-  padding-left: 1px;
 }
 
 body.open .menu {
   visibility: visible; /* 행의 요소를 보이게 한다 */
 }
 
-
+/* 버튼안의 메뉴클릭설정 */
 .menu a {
   position: relative;
   color: #f9f9f9;
@@ -69,20 +68,21 @@ body.open .menu {
   cursor: pointer;
 }
 
+/* 마우스를 메뉴에 가져다댔을때의 스타일 (화살표 표시)*/
 .menu a::after {
   content: "";
-  position: absolute;
-  top: 50%;
-  right: -26px;
-  translate: 0 -50%;
+  position: absolute; /* 부모요소 기준으로 배치 */
+  top: 50%; /* 상단위치 설정 */
+  right: -26px; /* 오른쪽 설정 */
+  translate: 0 -50%; /* x축과 y축의 거리이동 */
   margin-top: 2px;
   width: 10px;
   height: 10px;
-  border-top: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
-  opacity: 0;
-  rotate: 45deg;
-  transition: 0.3s;
+  border-top: 3px solid #ffffff; /* 위쪽 화살표 스타일 설정 */
+  border-right: 3px solid #ffffff; /* 아래쪽 화살표 스타일 설정 */
+  opacity: 0; /* 불투명도 설정 */
+  rotate: 45deg; /* 화살표 회전각도 설정 */
+  transition: 0.3s; /* 시전속도 설정 */
 }
 
 .menu a:hover::after {
@@ -99,11 +99,13 @@ body.open .menu {
   }
 }
 
+/* 메뉴오픈할때 애니메이션 설정 */
 body.open .menu a {
-  opacity: 1;
+  opacity: 100;
   animation: appear 0.5s backwards;
 }
 
+/* 메뉴 텍스트 설정 */
 a {
   text-decoration: none;
   color: white;
