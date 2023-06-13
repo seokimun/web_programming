@@ -4,36 +4,43 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	font-family: 'Jost', sans-serif;
+	min-height: 100vh; /* 요소의 최소높이 설정 */
+	font-family: 'Jost', sans-serif; /* 폰트 설정 */
 	background: linear-gradient(to bottom, black, #302b63, black);
 }
+
+/* 로그인, 회원가입화면 전체설정 */
 .main{
 	width: 350px;
 	height: 500px;
-	overflow: hidden;
+	overflow: hidden; /* 빠져나오는 요소 숨김 */
 	background:#302b63;
-	border-radius: 10px; 
+	border-radius: 10px; /* 박스테두리 설정 */
 	box-shadow: 5px 20px 50px #000;
 }
+
 #chk{
-	display: none;
+	display: none; /* 화면상 영역을 차지않고 완전히 삭제 */
 }
+
+/* 회원가입 화면설정 */
 .회원가입{
 	position: relative;
 	width:100%;
 	height: 100%;
 }
+/* 회원가입 버튼설정 */
 label{
 	color: #fff;
 	font-size: 2.5em;
 	justify-content: center;
-	display: flex;
+	display: flex; 
 	margin: 60px;
 	font-weight: bold;
 	cursor: pointer;
-	transition: .5s ease-in-out;
+	transition: .5s ease-in-out; /* 천천이 애니메이션을 효과를 준다 */
 }
+/* 회원정보를 적어내는 상자스타일 설정 */
 input{
 	width: 60%;
 	height: 20px;
@@ -46,6 +53,7 @@ input{
 	outline: none;
 	border-radius: 5px;
 }
+/* 회원가입 버튼 설정 */
 button{
 	width: 60%;
 	height: 40px;
@@ -63,27 +71,30 @@ button{
 	transition: .2s ease-in;
 	cursor: pointer;
 }
+/* 마우스를 회원가입 버튼에 가져다 댔을때의 변화 */
 button:hover{
 	background: #6d44b8;
 }
+
+/* 로그인 스타일 설정 */
 .login{
 	height: 460px;
 	background: #eee;
-	border-radius: 60% / 10%;
-	transform: translateY(-180px);
+	border-radius: 60% / 10%; 
+	transform: translateY(-180px); /* 라벨 클릭시 y축이동 */
 	transition: .8s ease-in-out;
 }
+/* 로그인 라벨 스타일 설정 */
 .login label{
 	color: #573b8a;
-	transform: scale(.6);
+	transform: scale(.6); /* 글자크기 변경 */
 }
 
+/* 각 버튼을 눌렀을때의 화면이동 설정 */
 #chk:checked ~ .login{
-	transform: translateY(-500px);
+	transform: translateY(-500px); /* 로그인 버튼을 눌렀을때 Y축 기준으로 -500px 이동 */
 }
+/* 로그인 라벨 버튼을 눌렀을때의 글자크기 설정 */
 #chk:checked ~ .login label{
-	transform: scale(1);	
-}
-#chk:checked ~ .signup label{
-	transform: scale(.6);
+	transform: scale(1); 
 }
